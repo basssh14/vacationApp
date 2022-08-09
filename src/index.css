@@ -10,3 +10,34 @@
 .centerHorizontal {
   @apply left-1/2 transform -translate-x-1/2;
 }
+.italianaFont {
+  font-family: "Italiana", serif;
+}
+.nunitoFont {
+  font-family: "Nunito Sans", sans-serif;
+}
+.bgVacationImage {
+  background-image: url("./Images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgGradientWhiteToCenterBlack {
+  background: rgb(251, 251, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 251, 251, 1) 0%,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(0, 0, 0, 1) 99%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.bgTransparentWithBlur {
+  filter: blur(5px);
+}
+.buttonHover {
+  @apply transition duration-200 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:text-black hover:bg-white hover:border-white hover:underline;
+}
+.react-multi-carousel-list {
+  height: 100%;
+}
