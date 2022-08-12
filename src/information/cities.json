@@ -1,22 +1,32 @@
 [
   {
-    "name": "london",
-    "id": "geonameid:2643743"
+    "name": "londres",
+    "id": "geonameid:2643743",
+    "country": "Inglaterra"
   },
   {
-    "name": "rome",
-    "id": "geonameid:3169070"
+    "name": "viena",
+    "id": "geonameid:2761369",
+    "country": "Austria"
   },
   {
-    "name": "miami",
-    "id": "geonameid:4164138"
+    "name": "lisboa",
+    "id": "geonameid:2267057",
+    "country": "Portugal"
+  },
+  {
+    "name": "praga",
+    "id": "geonameid:3067696",
+    "country": "Republica Checa"
   },
   {
     "name": "paris",
-    "id": "geonameid:2988507"
+    "id": "geonameid:2988507",
+    "country": "Francia"
   },
   {
-    "name": "Lisbon",
-    "id": "geonameid:2267057"
+    "name": "rome",
+    "id": "geonameid:3169070",
+    "country": "Italia"
   }
 ]

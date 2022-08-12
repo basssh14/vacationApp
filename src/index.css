@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Center divs  */
+
 .centerSom {
   @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }
@@ -10,18 +13,49 @@
 .centerHorizontal {
   @apply left-1/2 transform -translate-x-1/2;
 }
+.putDivOverMiddle {
+  @apply absolute left-1/2 top-2/5 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+/* Fonts */
+
 .italianaFont {
   font-family: "Italiana", serif;
 }
 .nunitoFont {
   font-family: "Nunito Sans", sans-serif;
 }
-.bgVacationImage {
-  background-image: url("./Images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg");
+.amikoFont {
+  font-family: "Amiko", sans-serif;
+}
+
+/* Landing page bg image */
+
+.webBgImage {
+  background-image: url("./Images/lucas-kapla-wQLAGv4_OYs-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Glass effect & blur */
+
+.glassEffectCenterDiv {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(196, 196, 196, 0.16);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.blurContainerWidth {
+  @apply w-1/3;
+}
+.bgTransparentWithBlur {
+  filter: blur(5px);
+}
+
+/* Gradients */
+
 .bgGradientWhiteToCenterBlack {
   background: rgb(251, 251, 251);
   background: linear-gradient(
@@ -32,12 +66,32 @@
     rgba(255, 255, 255, 1) 100%
   );
 }
-.bgTransparentWithBlur {
-  filter: blur(5px);
-}
+
+/* Buttons */
+
 .buttonHover {
   @apply transition duration-200 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:text-black hover:bg-white hover:border-white hover:underline;
 }
+
+/* Modify the carousel package classes */
+
 .react-multi-carousel-list {
   height: 100%;
+}
+.react-multi-carousel-track {
+  height: 100%;
+}
+
+/* Test borders */
+
+.testBorderBlack {
+  @apply border-2 border-black;
+}
+
+.testBorderGreen {
+  @apply border-2 border-green-500;
+}
+
+.testBorderWhite {
+  @apply border-2 border-white;
 }
