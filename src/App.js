@@ -5,7 +5,7 @@ import Place from "./Components/Layout/Place"
 
 function App() {
   return (
-    <div className="w-screen h-screen min-h-screen relative webBgImage max-w-screen">
+    <div className="w-screen h-screen min-h-screen relative webBgImage max-w-screen m-0">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />

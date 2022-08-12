@@ -32,7 +32,7 @@ export default function SideBarMenu({ showSideBarMenu, changeSideBarMenu }) {
             }}
             className="border border-slate-800 py-2 px-5 rounded-lg bg-slate-800  hover:bg-white hover:text-black"
           >
-            CLOSE
+            CERRAR
           </a>
         </h3>
         {/*
@@ -47,7 +47,7 @@ export default function SideBarMenu({ showSideBarMenu, changeSideBarMenu }) {
                  * ----------------------------------
                  * Inicio option
                  */}
-                <a href="#" className="">
+                <a href="/" className="">
                   <li className="w-full h-1/5 text-2xl uppercase italianaFont relative border-b border-white menu-shadow rsm:text-xl">
                     <p className="absolute centerSom hover:text-gray-400">
                       Inicio
@@ -58,7 +58,7 @@ export default function SideBarMenu({ showSideBarMenu, changeSideBarMenu }) {
                  * ----------------------------------
                  * Lugares option
                  */}
-                <a href="#" className="">
+                <a href="/place" className="">
                   <li className="w-full h-1/5 text-2xl uppercase italianaFont relative border-b border-white menu-shadow rsm:text-xl">
                     <p className="absolute centerSom hover:text-gray-400">
                       Lugares

@@ -14,7 +14,9 @@ export default function Footer({ page }) {
      * Uses the "page" variable to dynamically give the height of footer
      * based on the page we are
      */
-    <div className={`bg-black w-full  min-h-12 relative basis-12`}>
+    <div
+      className={`bg-black w-full min-h-12 relative basis-12 m-0 p-0 overflow-hidden`}
+    >
       {/*
        * ----------------------------------
        * Copyright disclaimer start

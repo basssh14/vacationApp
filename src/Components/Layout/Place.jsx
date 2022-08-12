@@ -188,9 +188,9 @@ export default function Place() {
              * City information div start
              */}
 
-            <p className="italianaFont text-xl px-20 sm2:w-full sm2:text-center sm2:mt-4 sm2:mb-5 rsm:px-5 usm:-mt-2 usm:px-2">
-              Pais: {info.country} <br />
-              Poblacion: {info.population} <br />
+            <p className="italianaFont text-2xl px-20 sm2:text-xl sm2:w-full sm2:text-center sm2:mt-4 sm2:mb-5 rsm:px-5 usm:-mt-2 usm:px-2">
+              País: {info.country} <br />
+              Población: {info.population} <br />
               Zona Horaria: {info.timezone} <br />
               Temperatura: {weather.temp} C <br />
               Humedad: {weather.humidity} %
@@ -203,6 +203,7 @@ export default function Place() {
 
             <div className="w-3/5 border-2 border-black mt-3 mx-auto sm2:w-3/4 sm:w-full">
               <Carousel
+                key={"carousel"}
                 arrows={true}
                 itemClass="carouselItem"
                 responsive={responsive}
@@ -211,8 +212,8 @@ export default function Place() {
                  * ----------------------------------
                  * Loop through all of the city photos and pass the url to the carouselitem component to render them
                  */}
-                {photos.hits.map((photo) => (
-                  <CarouselItem url={photo[imageSize]} />
+                {photos.hits.map((photo, index) => (
+                  <CarouselItem key={index} url={photo[imageSize]} />
                 ))}
               </Carousel>
             </div>

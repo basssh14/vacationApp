@@ -15,9 +15,9 @@ export default function Landing() {
      * Start of component
      */
 
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col max-h-full">
       <Header page="landing" />
-      <div className="bg-transparent w-full basis-full min-h-96 py-5 px-4">
+      <div className="bg-transparent w-full grow shrink min-h-96 py-5 px-4">
         <div className=" relative w-full h-full">
           {/*
            * ----------------------------------

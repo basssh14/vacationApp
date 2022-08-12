@@ -39,7 +39,7 @@ export default function Header({ page }) {
 
     <div
       className={`w-full basis-16 px-4 bg-transparent ${
-        page === "landing" ? "basis-16 bg-transparent" : " basis-16 bg-white"
+        page === "landing" ? "bg-transparent" : "bg-white"
       }`}
     >
       {/*
